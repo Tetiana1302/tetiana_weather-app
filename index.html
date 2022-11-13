@@ -15,8 +15,55 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello Tetiana!</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+      <div class="weather">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input
+                type="submit"
+                class="btn btn-primary w-100"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="WeatherInfo">
+          <div class="row">
+            <div class="col-6">
+              <h1>London</h1>
+              <ul>
+                <li>
+                  <span> "Sunday" "20" ":" "34" </span>
+                  " ," "clear sky"
+                </li>
+                <li>
+                  "Humiditi: "
+                  <strong> "42" "%" </strong>
+                  ", Wind:"
+                  <strong> "4.63" "km/h" </strong>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-8">
+              <div class="temperature-container d-flex justify-conten-end">
+                <canvas width="52" height="52">
+                  <div>
+                    <span class="temperature">15</span>
+                    <span class="unit">C</span>
+                  </div>
+                </canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
