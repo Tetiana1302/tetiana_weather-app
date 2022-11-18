@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
@@ -37,25 +39,23 @@
         <div class="WeatherInfo">
           <div class="row">
             <div class="col-6">
-              <h1>London</h1>
+              <h1 id="city"></h1>
               <ul>
+                <li>Sunday 20 : 34</li>
+                <li id="description"></li>
                 <li>
-                  <span> Sunday 20 : 34 </span>
-                  , clear sky
-                </li>
-                <li>
-                  Humiditi:
-                  <strong> 42 % </strong>
-                  , Wind:
-                  <strong> 4.63 km/h </strong>
+                  Humidity:
+                  <span id="humidity"></span>
+                  % , Wind:
+                  <span id="wind"></span> km/h
                 </li>
               </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-8">
               <div class="temperature-container d-flex justify-conten-end">
                 <div>
-                  <span class="temperature">15</span>
-                  <span class="unit">C</span>
+                  <span class="temperature" id="temperature"></span>
+                  <span class="unit">°C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
