@@ -66,6 +66,7 @@ li::first-letter {
   font-weight: 700;
   line-height: 1;
   margin-left: 10px;
+  text-decoration: none;
 }
 .unit {
   color: #212121;
@@ -75,4 +76,17 @@ li::first-letter {
   line-height: 1;
   position: relative;
   top: -34px;
+}
+
+.temperature-container .active {
+  color: #212121;
+  cursor: default;
+  text-decoration: none;
+}
+.fahrenheit {
+  text-decoration: underline;
+}
+
+.temperature-container .active:hover {
+  text-decoration: none;
 }
