@@ -78,13 +78,16 @@ li::first-letter {
   top: -34px;
 }
 
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
 .temperature-container .active {
   color: #212121;
   cursor: default;
   text-decoration: none;
-}
-.fahrenheit {
-  text-decoration: underline;
 }
 
 .temperature-container .active:hover {
