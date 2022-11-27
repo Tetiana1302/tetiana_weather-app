@@ -18,6 +18,15 @@
   <body>
     <div class="container">
       <div class="weather">
+        <div class="logo">
+          <img
+            src="http://www.eslkidz.com/uploads/1/0/5/7/10578029/weather-word-pic_orig.png"
+            alt="weather"
+            class="weather-logo"
+            width="400"
+          />
+        </div>
+
         <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
@@ -54,9 +63,9 @@
               </ul>
             </div>
             <div class="col-6">
-              <div class="temperature-container">
+              <div class="temperature-container d-flex justify-contnt-end">
                 <img src="" alt="Clear" id="icon" class="float-left" />
-                <div>
+                <div class="temperature-containerFlex">
                   <span class="temperature" id="temperature"></span>
                   <span class="unit"> °C</span>
                 </div>
@@ -65,6 +74,21 @@
           </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
+        <footer>
+          This project was coded by Tetiana Bysykalo and is
+          <a
+            href="https://github.com/Tetiana1302/tetiana_weather-app"
+            target="_blank"
+            rel="open"
+            >open-sorced on GitHub </a
+          >and
+          <a
+            href="https://bucolic-valkyrie-46bb4d.netlify.app/"
+            target="_blank"
+            rel="open"
+            >hosted on Netlify</a
+          >
+        </footer>
       </div>
     </div>
     <script src="src/app.js"></script>
