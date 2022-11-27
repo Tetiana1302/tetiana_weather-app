@@ -1,5 +1,9 @@
 body {
-  background: whitesmoke;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(239, 246, 249) 0%,
+    rgb(206, 239, 253) 90%
+  );
 }
 
 .container {
