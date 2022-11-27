@@ -1,9 +1,9 @@
 body {
-  background: #f9f7fe;
+  background: whitesmoke;
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -12,12 +12,12 @@ body {
 
 .weather {
   max-width: 800px;
-  background: #fff;
+  background: white;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   color: #878787;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
-  padding: 40px;
+  padding: 20px;
   display: block;
   margin: auto;
 }
@@ -174,4 +174,12 @@ li::first-letter {
 .forecast-temperature-min {
   margin-left: 10px;
   opacity: 0.6;
+}
+
+.footer {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 20px;
+  text-align: center;
 }
